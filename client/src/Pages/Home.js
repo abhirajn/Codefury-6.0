@@ -16,7 +16,7 @@ export default function Home() {
      <FAQ/>
       <Testimonias/>
 
-
+      <Footer/>
     </div>
   )
 }
