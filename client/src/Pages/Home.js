@@ -5,7 +5,7 @@ import Mirror from '../Components/Mirror'
 import Testimonias from '../Components/Testimonials/Testimonials'
 import Login from './Login'
 import Signup from './Signup'
-import Header from './Header'
+import Header from '../Components/Testimonials/HeaderHeader'
 import Tipscard from '../Components/Tipscard'
 import FAQ from '../Components/FAQ/FAQ'
 
