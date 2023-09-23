@@ -1,5 +1,5 @@
 import React from 'react'
-// import Sidebar from '../Components/sidebar'
+import Sidebar from '../Components/Sidebar'
 import Footer from '../Components/Footer'
 import Testimonias from '../Components/Testimonials'
 import Login from './Login'
@@ -11,11 +11,8 @@ export default function Home() {
   return (
     <div>
       
-        {/* <Sidebar/> */}
-        <Testimonias/>
-        HOme Pages
-        
-        <Footer/>
+        <Sidebar/>
+     
       
 
 

@@ -4,10 +4,11 @@ import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import Tips from "./Pages/Tips";
 import Guidance from "./Pages/Guidance";
+import PostQuestions from "./Pages/PostQuestions";
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Router>
         <Routes>
           <Route path={"/signin"} element={<Login />} />
@@ -15,6 +16,7 @@ function App() {
           <Route path={"/"} element={<Home />} />
           <Route path={"/guidance"} element = {<Guidance/>} />
           <Route path={"/tips"} element={<Tips/>}></Route>
+          <Route path={"/post"} element={<PostQuestions/>}/>
         </Routes>
       </Router>
     </div>
