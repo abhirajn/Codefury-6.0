@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    color: #fff;
+    line-height: 23pt;
+    padding : 0;
+    font-family: 'Heebo', sans-serif;
+
+}
+.rowg {
+    width: 80vw;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.colwhyg {
+    flex-basis: 40%;
+    height: 453px;
+    border-radius: 10px;
+    margin: 5%;
+    padding:30px auto;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border: 2px dashed rgb(88, 88, 234);
+}
+
+.colwhyg:hover {
+    box-shadow: 0 0 20px 20px rgba(50, 34, 196, 0.382);
+}
+@media(max-width: 700px){
+    .rowg{
+       flex-direction: column;
+    }
+}
+.full{
+    width: 100vw;
+    height: 100vh;
+}
+.collabg {
+    width: 80vw;
+    height: 80px;
+    margin:auto;
+    text-align: center;
+    padding-top:40px;
+}
+.collab-colg {
+  flex-basis: 50%;
+  border-radius:10px;
+  margin-bottom:5%;
+  text-align:center;
+}
+.collab-colg img{
+    width: 100%;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+.footer {
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.sub-headerg {
+     margin: auto;
+    padding: auto;
+    height: 70vh;
+    width: 100%;
+    background-image: url(../courseimages/game.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px; 
+    font-weight: 600;
+
+}
+.icons .fa-brands {
+   margin:0 13px;
+   cursor: pointer;
+   padding: 18px 0;
+}
+.fa-solid {
+    color: rgb(255, 0, 0);
+}
+/*------------about us-----------*/
+.sub-header {
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.sub-header h1 {
+    margin-top:100px;
+}
+.about-us {
+    width:80%;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+.red-btn {
+    border:1px solid rgba(61, 75, 232, 0.958);
+    background: transparent;
+    color:rgba(77, 119, 234, 0.958);
+}
+.red-btn:hover {
+    color:  #fff;
+}
+
+@media (max-width:700px) {
+  .sub-header h1 {
+    font-size: 24px;
+  }  
+}
+
+
+.addbtn:hover{
+    background-color: rgb(112, 106, 237);
+    color: rgb(239, 236, 247);
+}
+

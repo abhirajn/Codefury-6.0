@@ -4,6 +4,7 @@ import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import Tips from "./Pages/Tips";
 import Guidance from "./Pages/courseimages/Guidance";
+import Gaming from "./Pages/Game/Gaming";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path={"/"} element={<Home />} />
           <Route path={"/guidance"} element = {<Guidance/>} />
           <Route path={"/tips"} element={<Tips/>}></Route>
+          <Route path={"/gaming"} element={<Gaming/>}></Route>
         </Routes>
       </Router>
     </div>
