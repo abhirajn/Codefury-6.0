@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from '../Components/Sidebar'
 import Footer from '../Components/Footer'
-import Testimonias from '../Components/Testimonials'
+import Testimonias from '../Components/Testimonials/Testimonials'
 import Login from './Login'
 import Signup from './Signup'
 
@@ -14,7 +14,7 @@ export default function Home() {
       
         <Sidebar/>
      <FAQ/>
-      
+      <Testimonias/>
 
 
     </div>
