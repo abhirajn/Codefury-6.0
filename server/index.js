@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require("dotenv").config();
 // const adminRouter = require("./routes/admin");
 // const userRouter = require("./routes/user");
 
@@ -19,4 +20,4 @@ app.use("/*", (req, res) => {
 
 mongoose.connect('', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
-app.listen(5000, () => console.log('Server running on port 3000'));
+app.listen( process.env.PORT || 8000, () => console.log('Server running on port 8000'));
