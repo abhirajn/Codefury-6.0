@@ -13,6 +13,7 @@ export default function Signup() {
   const [Name, setName] = useState("")
 
   return (
+    <bodyg>
     <div class="container modal" id="modal-signup">
            <div class="login-box"> 
               <h2>Signup</h2>  
@@ -109,5 +110,6 @@ export default function Signup() {
 
 
 </div> 
+</bodyg>
   )
 }
