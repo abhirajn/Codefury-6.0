@@ -1,13 +1,19 @@
 const express = require('express');
-const { authenticateJwt, SECRET } = require("../middleware/auth");
+// const { authenticateJwt, SECRET } = require("../middleware/auth");
 const {User} = require("../modals/User");
 const { Counsellor } = require('../modals/Counsellors');
+const jwt = require('jsonwebtoken');
+const { SECRET } = require("../middleware/auth")
+const { authenticateJwt } = require("../middleware/auth");
 
 const router = express.Router();
 
 
+
 router.post('/signup', async (req, res) => {
+
     const { username, password } = req.body;
+    console.log(req.body)
     const user = await User.findOne({ username });
     if (user) {
       res.status(403).json({ message: 'User already exists' });
@@ -36,7 +42,7 @@ router.post('/signup', async (req, res) => {
     res.send(response);
   })
 
-  router.get()
+  module.exports = router
 
 
 
