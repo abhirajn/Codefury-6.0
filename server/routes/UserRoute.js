@@ -51,8 +51,37 @@ router.post('/signup', async (req, res) => {
 
   router.get('/questions/:questiosId' , async(req, res)=>{
     const response = await Question.findById(req.params.questiosId)
-console.log(response)
+// console.log(response)
     res.send(response);
+  })
+
+  router.post('/postQuestion' , async(req,res)=>{
+    const {  title, description , comments } = req.body;
+    const newques = new Question({ title, description , comments });
+   newques.save();
+   res.send("done");
+  })
+  router.post('/postComment' , async(req,res)=>{
+    const { id , comment } = req.body;
+    try {
+      // Find the item by ID
+      const item = await Question.findById(id.props);
+  
+      if (!item) {
+        return res.status(404).json({ error: 'Item not found' });
+      }
+  
+      // Push the comment to the "comments" array
+      item.comments.push(comment);
+  
+      // Save the updated item
+      await item.save();
+  
+      res.send({ message: 'Comment added successfully' });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send({ error: 'Internal server error' });
+    }
   })
   module.exports = router
 

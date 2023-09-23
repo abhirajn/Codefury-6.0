@@ -4,6 +4,7 @@ import Sidebar from '../Components/Sidebar'
 import { useState , useEffect} from 'react';
 import axios from "axios";
 import {BsPlusCircle} from 'react-icons/bs'
+import PostForm from '../Components/PostForm';
 // import { Question } from '../../../server/modals/Questions';
 export default function PostQuestions() {
   const [question, setQuestion] = useState([]);
@@ -23,6 +24,9 @@ export default function PostQuestions() {
       init();
   }, []);
 
+  const handlesubmit=  ()=>{
+    setNewpost(!newpost);
+  }
 
   return (
     <div className='flex overscroll-none'>
@@ -34,10 +38,10 @@ export default function PostQuestions() {
        return <Postcard props = {data}/>}
        ))}
      </div>
-      <div>
-       <button className='h-10 w-10 rounded bg-gray-600 m-5' onClick={setNewpost(!newpost)}>Post</button>
-    
-      </div>
+     <div>
+     <button onClick={handlesubmit} type="button" class="m-5 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">POST</button>
+     </div>
+     {newpost ? <div><PostForm/>{setNewpost(!newpost)}</div> : <div></div>}
     </div>
   )
 }
