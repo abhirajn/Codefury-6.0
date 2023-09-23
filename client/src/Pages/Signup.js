@@ -1,6 +1,7 @@
 import React from 'react'
-import './Login.css'
 
+import './Login.css'
+import './signup.css'
 export default function Signup() {
   return (
     <div class="container modal" id="modal-signup">
@@ -26,7 +27,7 @@ export default function Signup() {
                 </form>
            </div> 
                   
-           <span style={{"--i":0}}></span>
+<span style={{"--i":0}}></span>
 <span style={{"--i":1}}></span>
 <span style={{"--i":2}}></span>
 <span style={{"--i":3}}></span>
