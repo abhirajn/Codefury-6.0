@@ -21,24 +21,18 @@ export default function Home() {
 
       <Header/>
 
-<<<<<<< HEAD
+
 {/*  */}
      <div className = 'fixed'>
      <Sidebar/>
-     
      </div>
     <div>
     <Navbar/>
     <Hero />
         <Pricing/>
-=======
-
-        <Sidebar/>
         <Mirror/>
->>>>>>> 5ba32c958530e4ea61f145607f8ace4d72fdb622
-     <FAQ/>
+        <FAQ/>
       <Testimonias/>
-
      <Footer/>
     </div>
     </div>
