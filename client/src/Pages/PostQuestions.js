@@ -24,15 +24,18 @@ export default function PostQuestions() {
 
 
   return (
-    <div className=''>
+    <div className='flex overscroll-none'>
       <Sidebar />
 
-      {question.map((data =>{
+     <div className=''>
+     <h1 className='text-black'> Community Questions </h1>
+     {question.map((data =>{
        return <Postcard props = {data}/>}
        ))}
-      <BsPlusCircle/>
-
-
+     </div>
+      <div>
+       
+      </div>
     </div>
   )
 }
