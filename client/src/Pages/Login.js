@@ -28,7 +28,8 @@ export default function Login() {
              <div class="forgot-pass">
                  <p >Forgot your password?</p>
                </div>
-            <button type="submit" class="btn"  onClick={async () => {
+            <button class="btn"  onClick={async () => {
+              console.log(email + " " + password)
                         const res = await axios.post(`http://localhost:8000/user/login`, {
                             username: email,
                             password: password
@@ -41,7 +42,7 @@ export default function Login() {
                         const data = res.data;
                         console.log(data)
                         localStorage.setItem("token", data.token);
-                        // window.location = "/"
+                        window.location = "/"
                         // setUser({
                         //     userEmail: email,
                         //     isLoading: false
