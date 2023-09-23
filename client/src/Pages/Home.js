@@ -6,7 +6,7 @@ import Login from './Login'
 import Signup from './Signup'
 
 import Tipscard from '../Components/Tipscard'
-import FAQ from '../Components/FAQ'
+import FAQ from '../Components/FAQ/FAQ'
 
 export default function Home() {
   return (
