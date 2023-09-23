@@ -1,21 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
-*{
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Crimson Text', serif;
-  }
+  } */
 
-  body{
+  /* body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #1f293a;
 
-  }
+  } */
 .container {
     position: relative;
     width: 256px;

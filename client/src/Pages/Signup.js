@@ -1,28 +1,53 @@
 
 import React from 'react'
 import './Login.css'
+import {useNavigate} from "react-router-dom";
+import {useState} from "react";
+import axios from "axios";
+import { RiContactsBookLine } from 'react-icons/ri';
 
 export default function Signup() {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [Name, setName] = useState("")
+
   return (
     <div class="container modal" id="modal-signup">
            <div class="login-box"> 
               <h2>Signup</h2>  
                 <form id="signup-form">
                     <div class="input-box">
-                        <input type="text" id="signup-username" required/>
+                        <input type="text" id="signup-username" required onChange={(event) => {
+                        setName(event.target.value);
+                    }}/>
                         <label for="signup-username">Username</label>
                      </div>
                     <div class="input-box">
-                       <input type="email"  id="signup-email" required/>
+                       <input type="email"  id="signup-email" required onChange={(event) => {
+                        setEmail(event.target.value);
+                    }}/>
                        <label for="signup-email">Email</label>
                     </div>
                     <div class="input-box">
-                        <input type="password" id="signup-password" required/>
+                        <input type="password" id="signup-password" required onChange={(event) => {
+                        setPassword(event.target.value);
+                    }}/>
                         <label for="signup-password" >Password</label>
                     </div>
-                          <button type="submit" class="btn">Signup</button>
+                          <button type="submit" class="btn" onClick={async() => {
+                            console.log(Name + " " + email + " " + password)
+                        const response = await axios.post(`http://localhost:8000/user/signup`, {
+                            name : Name,
+                            username: email,
+                            password: password
+                        })
+                        let data = response.data;
+                        localStorage.setItem("token", data.token);
+                        window.location = "/"
+                    }}>Signup</button>
                        <div class="signup-link">
-                            <a href="./login.html">Login</a>
+                            <p >Login</p>
                        </div>
                 </form>
            </div> 

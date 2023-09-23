@@ -42,6 +42,10 @@ router.post('/signup', async (req, res) => {
     res.send(response);
   })
 
+  router.get('/questions' , async(req, res)=>{
+    const response = await Counsellor.find({});
+    res.send(response);
+  })
   module.exports = router
 
 
