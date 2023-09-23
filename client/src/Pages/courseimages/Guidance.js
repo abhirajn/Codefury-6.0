@@ -1,14 +1,15 @@
 import React from 'react'
-import './Guidance.css';
-import i1 from './courseimages/i-1.jpg'
-import i2 from './courseimages/i-2.jpg'
-import i3 from './courseimages/i-3.jpg'
-import i4 from './courseimages/i-4.jpg'
-import i5 from './courseimages/i-5.jpg'
-import i6 from './courseimages/i-6.jpg'
-import i7 from './courseimages/i-7.jpg'
-import i8 from './courseimages/i-8.jpg'
-import i9 from './courseimages/i-9.jpg'
+import './Guidance.css'
+
+import i1 from './i-1.jpg'
+import i2 from './i-2.jpg'
+import i3 from './i-3.jpg'
+import i4 from './i-4.jpg'
+import i5 from './i-5.jpg'
+import i6 from './i-6.jpg'
+import i7 from './i-7.jpg'
+import i8 from './i-8.jpg'
+import i9 from './i-9.jpg'
 
 
 
