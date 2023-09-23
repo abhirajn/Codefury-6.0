@@ -46,7 +46,9 @@ export default function Signup() {
                         localStorage.setItem("token", data.token);
                         window.location = "/"
                     }}>Signup</button>
-                       <div class="signup-link">
+                       <div class="signup-link" onClick={()=>{
+                        window.location = "/login"
+                       }}>  <p>ALready a user</p>
                             <p >Login</p>
                        </div>
                 </form>
