@@ -3,6 +3,7 @@ import './Login.css'
 
 export default function Login() {
   return (
+    <bodyg>
     <div class="container modal">
     <div class="login-box"> 
        <h2>Login</h2>  
@@ -16,7 +17,7 @@ export default function Login() {
                  <label for="login-password">Password</label>
              </div>
              <div class="forgot-pass">
-                 <a href="#">Forgot your password?</a>
+                 <a href="">Forgot your password?</a>
                </div>
             <button type="submit" class="btn">Login</button>
                 <div class="signup-link">
@@ -76,7 +77,7 @@ export default function Login() {
 <span style={{"--i":48}}></span>
 <span style={{"--i":49}}></span>
 
-
-</div> 
+</div>
+</bodyg>
   )
 }

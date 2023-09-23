@@ -4,14 +4,14 @@ import Footer from '../Components/Footer'
 import Testimonias from '../Components/Testimonials/Testimonials'
 import Login from './Login'
 import Signup from './Signup'
-import Header from './Header'
+// import Header from './Header'
 import Tipscard from '../Components/Tipscard'
 import FAQ from '../Components/FAQ/FAQ'
 
 export default function Home() {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
         <Sidebar/>
      <FAQ/>
       <Testimonias/>
