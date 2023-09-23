@@ -1,7 +1,7 @@
-import React from 'react'
 
+import React from 'react'
 import './Login.css'
-import './signup.css'
+
 export default function Signup() {
   return (
     <div class="container modal" id="modal-signup">
