@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { itemss1, itemss2 } from "./Content";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 // import "../../styles/globals.css";
+import ScrollAnimationWrapper from "../../utils/ScrollAnimationWrapper";
+import { motion } from "framer-motion";
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -13,6 +15,8 @@ function FAQ() {
   return (
     <div className="py-[5rem]">
       <>
+      <ScrollAnimationWrapper>
+        <motion-div>
         <div className="mx-4 flex flex-wrap mb-[3rem]">
           <div className="w-full px-4 pb-0">
             <div className="mx-auto mb-[10px] max-w-[520px] text-center lg:mb-6">
@@ -86,7 +90,10 @@ function FAQ() {
             </div>
           </div>
         </div>
+        </motion-div>
+        </ScrollAnimationWrapper>
       </>
+      
     </div>
   );
 }

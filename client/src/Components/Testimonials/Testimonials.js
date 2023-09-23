@@ -61,10 +61,12 @@ export default function Testimonials() {
           <h2
             class=""
             // class="text-3xl font-bold mb-12 flex justify-center orange_gradient"
-            className=" text-[2rem] sm:text-[4.5rem]"
+            className="text-black"
           >
-            Testimonials
+            Trusted by Thousands of Happy Customer
+
           </h2>
+          <h3 className="text-black">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</h3>
           <div className="h-1 w-[30%] bg-orange-300 rounded-full "></div>
         </div>
         <br /> <br /> <br />
@@ -86,7 +88,7 @@ export default function Testimonials() {
           >
             {/* testimonials */}
 
-            <SwiperSlide className="py-11" style={{backgroundColor: "#303032"}}>
+            <SwiperSlide className="py-11">
               <div className="">
                 <div className="flex justify-center mb-5">
                   <img
@@ -95,18 +97,18 @@ export default function Testimonials() {
                     id="testimg"
                   />
                 </div>
-                <h3 className=" text-xl text-lg font-bold mb-2 ">Sallu</h3>
-                <h6 className="font-medium orange_gradient mb-2">
+                <h3 className="text-black text-xl text-lg font-bold mb-2 ">Sallu</h3>
+                <h6 className="text-black font-medium orange_gradient mb-2">
                   Web Developer
                 </h6>
-                <p className="px-10 md:text-lg sm:text-base ">
+                <p className="text-black px-10 md:text-lg sm:text-base ">
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
                   tenetur" <br /> ⭐⭐⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide style={{backgroundColor: "#303032"}}>
+            <SwiperSlide>
               <div className="py-7">
                 <div className="flex justify-center mb-5 ">
                   <img
@@ -115,18 +117,18 @@ export default function Testimonials() {
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Kabir</h3>
-                <h6 className="font-medium orange_gradient mb-2">
+                <h3 className="text-black text-lg font-bold mb-2">Kabir</h3>
+                <h6 className="text-black font-medium orange_gradient mb-2">
                   App developer
                 </h6>
-                <p className="px-10 md:text-lg sm:text-base">
+                <p className="text-black px-10 md:text-lg sm:text-base">
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
                   tenetur" <br /> ⭐⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide style={{backgroundColor: "#303032"}}>
+            <SwiperSlide >
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
@@ -135,18 +137,18 @@ export default function Testimonials() {
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Forgot</h3>
-                <h6 className="font-medium orange_gradient mb-2">
+                <h3 className="text-black text-lg font-bold mb-2">Forgot</h3>
+                <h6 className="text-black font-medium orange_gradient mb-2">
                   Businessman
                 </h6>
-                <p className="px-10 md:text-lg sm:text-base">
+                <p className="text-black px-10 md:text-lg sm:text-base">
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
                   tenetur" <br /> ⭐⭐⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide style={{backgroundColor: "#303032"}}>
+            <SwiperSlide>
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
@@ -155,16 +157,16 @@ export default function Testimonials() {
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Virus</h3>
-                <h6 className="font-medium orange_gradient mb-2">Professor</h6>
-                <p className="px-10 md:text-lg sm:text-base">
+                <h3 className="text-black text-lg font-bold mb-2">Virus</h3>
+                <h6 className="text-black font-medium orange_gradient mb-2">Professor</h6>
+                <p className=" text-blackpx-10 md:text-lg sm:text-base">
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
                   tenetur" <br /> ⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide style={{backgroundColor: "#303032"}}>
+            <SwiperSlide >
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
@@ -173,16 +175,16 @@ export default function Testimonials() {
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Munna</h3>
-                <h6 className="font-medium orange_gradient mb-2">Doctor</h6>
-                <p className="px-10 md:text-lg sm:text-base">
+                <h3 className="text-black text-lg font-bold mb-2">Munna</h3>
+                <h6 className="text-black font-medium  mb-2">Doctor</h6>
+                <p className="text-black px-10 md:text-lg sm:text-base">
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
                   tenetur" <br /> ⭐
                 </p>
               </div>
             </SwiperSlide>
-            <SwiperSlide style={{backgroundColor: "#303032"}}>
+            <SwiperSlide >
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
@@ -191,9 +193,9 @@ export default function Testimonials() {
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-lg font-bold mb-2">Rocky</h3>
-                <h6 className="font-medium orange_gradient mb-2">CEO</h6>
-                <p className="px-10 md:text-lg sm:text-base">
+                <h3 className="text-black text-lg font-bold mb-2">Rocky</h3>
+                <h6 className="font-medium text-black mb-2">CEO</h6>
+                <p className="text-black px-10 md:text-lg sm:text-base">
                   "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
                   tenetur" <br /> ⭐⭐

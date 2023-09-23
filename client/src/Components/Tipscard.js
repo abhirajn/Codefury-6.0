@@ -3,7 +3,7 @@ import './Tipscard.css'
 
 export default function Tipscard() {
   return (
-    <div>
+    <div class = 'bodyy' style={{ backgroundColor: "#303032"}} >
     <h1>IMPROVE YOUR MENTAL HEALTH EASILY:</h1>
     <main>
         <section class="cards">

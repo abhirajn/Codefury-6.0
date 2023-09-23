@@ -15,7 +15,7 @@ import i9 from './i-9.jpg'
 
 export default function Guidance() {
   return (
-    <>
+    <div style={{ backgroundColor: "#303032"}}>
     <section class="sub-header">
         <nav>
             <a href="">
@@ -27,7 +27,7 @@ export default function Guidance() {
         </nav>
  </section>
 
-<section class="collab">
+<section class="collab" >
     <h1> MENTAL HEALTH ARTICLES </h1>
       <p>Recognizing the Early Signs of Mental Illness and understanding them </p>
       <div class="row">
@@ -122,6 +122,6 @@ export default function Guidance() {
          </div>
   </div>
 </section>
-</>
+</div>
   )
 }
