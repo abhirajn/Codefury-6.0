@@ -4,6 +4,7 @@ import Signup from "./Pages/Signup";
 import Login from "./Pages/Login";
 import Tips from "./Pages/Tips";
 import Guidance from "./Pages/courseimages/Guidance";
+import Gaming from "./Pages/Game/Gaming";
 import PostQuestions from "./Pages/PostQuestions";
 import Post from "./Pages/Post";
 
@@ -14,11 +15,12 @@ function App() {
     <div className="">
       <Router>
         <Routes>
-          <Route path={"/signin"} element={<Login />} />
+          <Route path={"/login"} element={<Login />} />
           <Route path={"/signup"} element={<Signup/>} />
           <Route path={"/"} element={<Home />} />
           <Route path={"/guidance"} element = {<Guidance/>} />
           <Route path={"/tips"} element={<Tips/>}></Route>
+          <Route path={"/gaming"} element={<Gaming/>}></Route>
           <Route path={"/post"} element={<PostQuestions/>}/>
           <Route path={"/post/:postId"} element={<Post/>}/>
         </Routes>

@@ -13,6 +13,7 @@ export default function Signup() {
   const [Name, setName] = useState("")
 
   return (
+    <bodyg>
     <div class="container modal" id="modal-signup">
            <div class="login-box"> 
               <h2>Signup</h2>  
@@ -35,18 +36,22 @@ export default function Signup() {
                     }}/>
                         <label for="signup-password" >Password</label>
                     </div>
-                          <button type="submit" class="btn" onClick={async() => {
+                          <button  class="btn" onClick={async() => {
                             console.log(Name + " " + email + " " + password)
                         const response = await axios.post(`http://localhost:8000/user/signup`, {
                             name : Name,
                             username: email,
                             password: password
                         })
+                        console.log("hi")
                         let data = response.data;
                         localStorage.setItem("token", data.token);
                         window.location = "/"
+                        // navigate('/')
                     }}>Signup</button>
-                       <div class="signup-link">
+                       <div class="signup-link" onClick={()=>{
+                        window.location = "/login"
+                       }}>  <p>ALready a user</p>
                             <p >Login</p>
                        </div>
                 </form>
@@ -105,5 +110,6 @@ export default function Signup() {
 
 
 </div> 
+</bodyg>
   )
 }

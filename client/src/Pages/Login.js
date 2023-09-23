@@ -1,26 +1,59 @@
 import React from 'react'
 import './Login.css'
+import {useNavigate} from "react-router-dom";
+import {useState} from "react";
+import axios from "axios";
 
 export default function Login() {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const navigate = useNavigate()
   return (
+    <bodyg>
     <div class="container modal">
     <div class="login-box"> 
        <h2>Login</h2>  
          <form id="login-form"  action="">
-             <div class="input-box">
-                <input type="email" id="login-email" required/>
+             <div class="input-box" onChange={(e)=>{
+              setEmail(e.target.value)
+             }} >
+                <input type="email" id="login-email" required />
                 <label for="login-email">Email</label>
              </div>
-             <div class="input-box">
-                 <input type="password"id="login-password" required/>
+             <div class="input-box" onChange={(e)=>{
+                     setPassword(e.target.value)
+             }}>
+                 <input type="password"id="login-password" required />
                  <label for="login-password">Password</label>
              </div>
              <div class="forgot-pass">
-                 <a href="#">Forgot your password?</a>
+
+                 <a href="">Forgot your password?</a>
+                 <p >Forgot your password?</p>
                </div>
-            <button type="submit" class="btn">Login</button>
+            <button class="btn"  onClick={async () => {
+              console.log(email + " " + password)
+                        const res = await axios.post(`http://localhost:8000/user/login`, {
+                            username: email,
+                            password: password
+                        }, {
+                            headers: {
+                                "Content-type": "application/json"
+                            }
+                        });
+                    
+                        const data = res.data;
+                        console.log(data)
+                        localStorage.setItem("token", data.token);
+                        window.location = "/"
+                        // setUser({
+                        //     userEmail: email,
+                        //     isLoading: false
+                        // })
+                        // navigate("/courses")
+                    }}>Login</button>
                 <div class="signup-link">
-                   <a href="./signup.html">Signup</a>
+                   <p >Signup</p>
                 </div>
          </form>
     </div> 
@@ -76,7 +109,7 @@ export default function Login() {
 <span style={{"--i":48}}></span>
 <span style={{"--i":49}}></span>
 
-
-</div> 
+</div>
+</bodyg>
   )
 }
