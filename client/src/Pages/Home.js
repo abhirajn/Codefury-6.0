@@ -18,11 +18,7 @@ export default function Home() {
 
       {/* <Header/> */}
 
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 4bab81f745b28d45ae9986ee406a1d2efe69b5f3
 {/*  */}
      <div className = 'fixed'>
      <Sidebar/>
@@ -31,19 +27,16 @@ export default function Home() {
     <div>
     <Navbar/>
     <Hero />
-<<<<<<< HEAD
+
     <Pricing/>
         {/* <Sidebar/> */}
         {/* <Mirror/> */}
      <FAQ/>
      <Testimonias/>
-
-=======
         <Pricing/>
         <Mirror/>
         <FAQ/>
       <Testimonias/>
->>>>>>> 4bab81f745b28d45ae9986ee406a1d2efe69b5f3
      <Footer/>
     </div>
     </div>

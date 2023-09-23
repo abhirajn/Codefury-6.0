@@ -35,10 +35,6 @@ export default function Sidebar() {
                         <div onClick={()=>{ navigate('/guidance')}} className='box-border rounded pl-3 py-3 w-full mt-2 flex flex-row text-lg font-medium rounded-md font-mono cursor-pointer text-black hover:p-1  hover:rounded-lg hover:text-white hover:bg-blue-500 hover:py-3'> <PiLightbulbDuotone className='h-5 w-5 ml-1 mr-3' style={{ fill: 'black' }}/> Guidance</div>
                         <div onClick={()=>{ navigate('/post')}} className='box-border rounded pl-3 py-3 w-full mt-2 flex flex-row text-lg font-medium rounded-md font-mono cursor-pointer text-black hover:p-1  hover:rounded-lg hover:text-white hover:bg-blue-500 hover:py-3'> <MdQuestionAnswer className='h-5 w-5 ml-1 mr-3' style={{ fill: 'black' }}/> Community</div>
                         <div className='box-border rounded pl-3 py-3 w-full mt-2 flex flex-row text-lg font-medium rounded-md font-mono cursor-pointer text-black hover:p-1  hover:rounded-lg hover:text-white hover:bg-blue-500 hover:py-3'> <BsInfoCircle className='h-5 w-5 ml-1 mr-3' style={{ fill: 'black' }}/> About Us</div>
-
-
-
-                        
                     </div>
                 </div> :
                  <div>

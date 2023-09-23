@@ -7,6 +7,7 @@ import {BsPlusCircle} from 'react-icons/bs'
 // import { Question } from '../../../server/modals/Questions';
 export default function PostQuestions() {
   const [question, setQuestion] = useState([]);
+  const[newpost , setNewpost] = useState(false);
 
   const init = async () => {
       const response = await axios.get(`http://localhost:8000/user/questions`)
@@ -34,7 +35,8 @@ export default function PostQuestions() {
        ))}
      </div>
       <div>
-       
+       <button className='h-10 w-10 rounded bg-gray-600 m-5' onClick={setNewpost(!newpost)}>Post</button>
+    
       </div>
     </div>
   )
