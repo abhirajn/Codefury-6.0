@@ -20,7 +20,7 @@ export default function Post() {
     const [check, setCheck] = useState(false);
 
     const init = async () => {
-        const response = await axios.get(`https://codefury-backend.onrender.com/user/questions/${postId}`,{
+        const response = await axios.get(`https://codefury-backend-2.onrender.com/user/questions/${postId}`,{
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
         }
