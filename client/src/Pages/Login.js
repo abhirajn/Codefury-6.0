@@ -8,7 +8,12 @@ export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const navigate = useNavigate()
+  let c = localStorage.getItem('token');
+  if(c){
+     navigate('/')
+  }
   return (
+    <>
     <bodyg>
     <div class="container modal">
     <div class="login-box"> 
@@ -28,29 +33,23 @@ export default function Login() {
              </div>
              <div class="forgot-pass">
 
-                 <a href="">Forgot your password?</a>
+                 <p >Forgot your password?</p>
                  <p >Forgot your password?</p>
                </div>
             <button class="btn"  onClick={async () => {
               console.log(email + " " + password)
                         const res = await axios.post(`http://localhost:8000/user/login`, {
-                            username: email,
-                            password: password
-                        }, {
-                            headers: {
-                                "Content-type": "application/json"
-                            }
-                        });
-                    
-                        const data = res.data;
-                        console.log(data)
-                        localStorage.setItem("token", data.token);
-                        window.location = "/"
-                        // setUser({
-                        //     userEmail: email,
-                        //     isLoading: false
-                        // })
-                        // navigate("/courses")
+                          username: email,
+                          password: password
+                      }, {
+                          headers: {
+                              "Content-type": "application/json"
+                          }
+                      });
+                      console.log("hi")
+                      const data = res.data;
+                      localStorage.setItem("token", data.token);
+                      window.location = '/'
                     }}>Login</button>
                 <div class="signup-link">
                    <p >Signup</p>
@@ -111,5 +110,6 @@ export default function Login() {
 
 </div>
 </bodyg>
+</>
   )
 }

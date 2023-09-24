@@ -19,8 +19,9 @@ export default function PostComment({props}) {
                             comment: newcomment
                         }, {
                             headers: {
-                                "Content-type": "application/json"
-                            }
+                                "Content-type": "application/json",
+                                Authorization: `Bearer ${localStorage.getItem('token')}`
+                            },
                         });
                     
                         // const data = res.data;

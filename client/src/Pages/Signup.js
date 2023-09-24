@@ -11,10 +11,14 @@ export default function Signup() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [Name, setName] = useState("")
-
+  let c = localStorage.getItem("token");
+  if(c){
+     navigate('/')
+  }
   return (
     <bodyg>
     <div class="container modal" id="modal-signup">
+        
            <div class="login-box"> 
               <h2>Signup</h2>  
                 <form id="signup-form">
@@ -42,13 +46,19 @@ export default function Signup() {
                             name : Name,
                             username: email,
                             password: password
-                        })
+                        },{
+                            headers: {
+                                "Content-type": "application/json"
+                            } 
+
+                        });
                         console.log("hi")
                         let data = response.data;
                         localStorage.setItem("token", data.token);
-                        window.location = "/"
+                        window.location = "/";
+                        
                         // navigate('/')
-                    }}>Signup</button>
+                    }} >Signup</button>
                        <div class="signup-link" onClick={()=>{
                         window.location = "/login"
                        }}>  <p>ALready a user</p>

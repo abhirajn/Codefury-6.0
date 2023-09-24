@@ -29,7 +29,8 @@ export default function PostForm() {
                             comments : []
                         }, {
                             headers: {
-                                "Content-type": "application/json"
+                                "Content-type": "application/json",
+                                Authorization: `Bearer ${localStorage.getItem('token')}`
                             }
                         });
                     

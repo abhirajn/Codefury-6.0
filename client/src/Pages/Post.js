@@ -18,14 +18,15 @@ export default function Post() {
     const [check, setCheck] = useState(false);
 
     const init = async () => {
-        const response = await axios.get(`http://localhost:8000/user/questions/${postId}`)
-            // headers: {
-            //     // Authorization: `Bearer ${localStorage.getItem('token')}`
-            // }
-        
-  console.log("hi")
-        setQues(response)
+        const response = await axios.get(`http://localhost:8000/user/questions/${postId}`,{
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+        }
+    })
+      setQues(response)
     }
+        
+    
   
     useEffect(() => {
         init();
