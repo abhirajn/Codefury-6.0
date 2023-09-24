@@ -10,17 +10,17 @@ const Hero = ({
     {
       name: "Users",
       number: "390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
+      icon: "https://www.svgrepo.com/download/3278/users.svg",
     },
     {
       name: "Locations",
       number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
+      icon: "https://www.svgrepo.com/show/127575/location-sign.svg",
     },
     {
       name: "Server",
       number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
+      icon: "https://www.svgrepo.com//show/76987/server.svg",
     },
   ],
 }) => {
@@ -28,7 +28,7 @@ const Hero = ({
 
   return (
     <div
-      className=" mt-24 px-5 xl:px-16 mx-auto overscroll-y-none"
+      className="  px-5 xl:px-16 mx-auto overscroll-y-none"
       id="about"
     >
       <ScrollAnimationWrapper>
@@ -37,18 +37,17 @@ const Hero = ({
             variants={scrollAnimation}>
             <div className="text-black flex flex-col justify-center items-start row-start-2 sm:row-start-1">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black leading-normal">
-                Want anything to be easy with <strong>LaslesVPN</strong>.
+              Embrace Your Well-Being: Your Journey to Mental Wellness Begins Here
               </h1>
-              <p className="text-black mt-4 mb-6">
-                Provide a network for all your needs with ease and fun using
-                LaslesVPN discover interesting features from us.
+              <p className="text-black my-4 mx-6">
+              Welcome to a Place of Healing and Hope. Discover Resources, Support, and Guidance to Nourish Your Mental Well-Being. Your Journey to a Healthier You Starts Now
               </p>
-              <ButtonPrimary>Get Started</ButtonPrimary>
+              <ButtonPrimary className='m-5'>Get Started</ButtonPrimary>
             </div>
             <div className="flex w-full">
               <motion.div className="text-black h-full w-full" variants={scrollAnimation}>
                 <img
-                  src="https://static.vecteezy.com/system/resources/thumbnails/000/364/016/small/Mental_Health_Vector.jpg"
+                  src="https://www.everypixel.com/covers/free/vector/health/mental/cover.jpg"
                   alt="VPN Illustrasi"
                   quality={100}
                   width={612}

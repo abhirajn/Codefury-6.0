@@ -26,14 +26,10 @@ export default function Home() {
     <Hero />
 
     <Pricing/>
-        {/* <Sidebar/> */}
-        {/* <Mirror/> */}
+       
      <FAQ/>
      <Testimonias/>
-        <Pricing/>
-        <Mirror/>
-        <FAQ/>
-      <Testimonias/>
+       
      <Footer/>
     </div>
     </div>

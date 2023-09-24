@@ -56,7 +56,7 @@ export default function Testimonials() {
   return (
     <>
       {/* title */}
-      <section className="py-[5rem]  sm:py-[8rem] px-5 ">
+      <section className="py-[5rem]  sm:py-[8rem] px-5 mx-10 ">
         <div className="flex flex-col justify-center items-center">
           <h2
             class=""
@@ -92,19 +92,17 @@ export default function Testimonials() {
               <div className="">
                 <div className="flex justify-center mb-5">
                   <img
-                    src="https://www.bollywoodpicturesgallery.com/media/actor/salman_khan/salman_khan_001_mwrl.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM3XhaMlh-nREAy91vPL7N41VPszTKqZikw&usqp=CAU"
                     class="rounded-full shadow-lg w-32 "
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-black text-xl text-lg font-bold mb-2 ">Sallu</h3>
+                <h3 className="text-black text-xl text-lg font-bold mb-2 ">Sarah</h3>
                 <h6 className="text-black font-medium orange_gradient mb-2">
-                  Web Developer
+                  IT employee
                 </h6>
                 <p className="text-black px-10 md:text-lg sm:text-base ">
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-                  tenetur" <br /> ⭐⭐⭐⭐⭐
+                  "I can't express how grateful I am for the support I received from this website. It's been a true lifeline for me during some tough times. Thank you for making a difference in my mental health journey!" <br /> ⭐⭐⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
@@ -112,19 +110,17 @@ export default function Testimonials() {
               <div className="py-7">
                 <div className="flex justify-center mb-5 ">
                   <img
-                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/8F9A/production/_107526763_58462021_406552023468743_2926755006583406592_o.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrhWXqJlJWNs2__nePzg_FcwuPfkaCEWQkA&usqp=CAU"
                     class="rounded-full shadow-lg w-32 "
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-black text-lg font-bold mb-2">Kabir</h3>
+                <h3 className="text-black text-lg font-bold mb-2">Lisa</h3>
                 <h6 className="text-black font-medium orange_gradient mb-2">
-                  App developer
+                  Teacher
                 </h6>
                 <p className="text-black px-10 md:text-lg sm:text-base">
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-                  tenetur" <br /> ⭐⭐⭐⭐
+                  "I stumbled upon this website when I was feeling lost and overwhelmed. The articles and tools provided have given me hope and a sense of empowerment. I'm on a much healthier path now!" <br /> ⭐⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
@@ -132,19 +128,17 @@ export default function Testimonials() {
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
-                    src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2020/03/aamir-ghajini-2-1583936081.jpg"
+                    src="https://i0.wp.com/studiolorier.com/wp-content/uploads/2018/10/Profile-Round-Sander-Lorier.jpg?ssl=1"
                     class="rounded-full shadow-lg w-32 "
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-black text-lg font-bold mb-2">Forgot</h3>
+                <h3 className="text-black text-lg font-bold mb-2">David</h3>
                 <h6 className="text-black font-medium orange_gradient mb-2">
                   Businessman
                 </h6>
                 <p className="text-black px-10 md:text-lg sm:text-base">
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-                  tenetur" <br /> ⭐⭐⭐⭐⭐
+                  "I've been to therapists, but this website has been an unexpected source of comfort and guidance. The tips and advice I found here have made a significant impact on my mental well-being" <br /> ⭐⭐⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
@@ -152,17 +146,15 @@ export default function Testimonials() {
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
-                    src="https://i.ndtvimg.com/mt/movies/2014-06/bomanmain.jpg?im=Resize=(1230,900)"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLv96hcUtr0lZ57A2V-lPJFG8-ltwA0I96RA&usqp=CAU"
                     class="rounded-full shadow-lg w-32 "
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-black text-lg font-bold mb-2">Virus</h3>
+                <h3 className="text-black text-lg font-bold mb-2">Alex</h3>
                 <h6 className="text-black font-medium orange_gradient mb-2">Professor</h6>
-                <p className=" text-blackpx-10 md:text-lg sm:text-base">
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-                  tenetur" <br /> ⭐⭐⭐
+                <p className=" text-black px-10 md:text-lg sm:text-base">
+                  "Finding this website was a turning point in my life. The content and community support have guided me toward a brighter future. Thank you for being a part of my mental health journeyr" <br /> ⭐⭐⭐
                 </p>
               </div>
             </SwiperSlide>
@@ -170,17 +162,15 @@ export default function Testimonials() {
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
-                    src="https://www.jagranimages.com/images/newimg/03022020/03_02_2020-munna-bhai-3_19995496.jpg"
+                    src="https://www.pngkey.com/png/detail/157-1579943_no-profile-picture-round.png"
                     class="rounded-full shadow-lg w-32 "
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-black text-lg font-bold mb-2">Munna</h3>
+                <h3 className="text-black text-lg font-bold mb-2">Grace</h3>
                 <h6 className="text-black font-medium  mb-2">Doctor</h6>
                 <p className="text-black px-10 md:text-lg sm:text-base">
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-                  tenetur" <br /> ⭐
+                  "This website has been a beacon of hope for me. It helped me better understand my mental health and gave me the strength to seek professional help. You are making a real impact" <br /> ⭐
                 </p>
               </div>
             </SwiperSlide>
@@ -188,17 +178,15 @@ export default function Testimonials() {
               <div className="py-7">
                 <div className="flex justify-center mb-5 py-1">
                   <img
-                    src="https://www.filmibeat.com/img/2019/02/xc-3-1547806334-jpg-pagespeed-ic-a78ivpinds-1549252520-1549613031-1549726804.jpg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VTkvvi3P4QQVG2Rn87BBKVbNlwslj2bQew&usqp=CAU"
                     class="rounded-full shadow-lg w-32 "
                     id="testimg"
                   />
                 </div>
-                <h3 className="text-black text-lg font-bold mb-2">Rocky</h3>
+                <h3 className="text-black text-lg font-bold mb-2">Mark</h3>
                 <h6 className="font-medium text-black mb-2">CEO</h6>
                 <p className="text-black px-10 md:text-lg sm:text-base">
-                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-                  tenetur" <br /> ⭐⭐
+                  "I owe my progress in managing stress and anxiety to this website. It's my go-to place for helpful advice and a reminder that I'm not alone in my struggles" <br /> ⭐⭐
                 </p>
               </div>
             </SwiperSlide>

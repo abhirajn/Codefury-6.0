@@ -13,7 +13,7 @@ const Pricing = () => {
 
   return (
     <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
+      className="text-black bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
       id="pricing"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
@@ -21,13 +21,13 @@ const Pricing = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black leading-relaxed"
+              className="text-black text-2xl sm:text-3xl lg:text-4xl font-medium text-black leading-relaxed"
             >
               Choose Your Plan
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
+              className="text-black leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
             >
               Let's choose the package that is best for you and explore it happily
               and cheerfully.
@@ -57,21 +57,24 @@ const Pricing = () => {
                   Free Plan
                 </p>
                 <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                  <li className="relative check custom-list my-2">
-                    Unlimited Bandwitch
+                  <li className="text-black relative check custom-list my-2">
+                    Unlimited Articles
                   </li>
-                  <li className="relative check custom-list my-2">
-                    Encrypted Connection
+                  <li className="text-black relative check custom-list my-2">
+                    Blogs
                   </li>
-                  <li className="relative check custom-list my-2">
-                    No Traffic Logs
+                  <li className="text-black relative check custom-list my-2">
+                    Recorded sessions
                   </li>
-                  <li className="relative check custom-list my-2">
+                  <li className="text-black relative check custom-list my-2">
+                    Games
+                  </li>
+                  <li className="text-black relative check custom-list my-2">
                     Works on All Devices
                   </li>
                 </ul>
                 <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
-                  <p className="text-2xl text-black text-center mb-4 ">
+                  <p className="text-black text-2xl text-black text-center mb-4 ">
                     Free
                   </p>
                   <ButtonOutline>Select</ButtonOutline>
@@ -97,24 +100,24 @@ const Pricing = () => {
                   alt="Standard Plan"
                 />
               </div>
-              <p className="text-lg text-black font-medium capitalize my-2 sm:my-7">
+              <p className="text-black text-lg text-black font-medium capitalize my-2 sm:my-7">
                 Standard Plan{" "}
               </p>
               <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+                <li className="text-black relative check custom-list my-2">
+                  Unlimited article
                 </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                <li className="text-black relative check custom-list my-2">
+                  Mentorship
                 </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                <li className="text-black relative check custom-list my-2">
+                  Counselling
                 </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
+                <li className="text-black relative check custom-list my-2">
+                  Products
                 </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
+                <li className="text-black relative check custom-list my-2">
+                  Games{" "}
                 </li>
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">
@@ -144,27 +147,27 @@ const Pricing = () => {
                   alt="Premium Plan"
                 />
               </div>
-              <p className="text-lg text-black font-medium capitalize my-2 sm:my-7">
+              <p className="text-black text-lg text-black font-medium capitalize my-2 sm:my-7">
                 Premium Plan{" "}
               </p>
-              <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
-                <li className="relative check custom-list my-2">
-                  Unlimited Bandwitch
+              <ul className="text-black flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+                <li className="text-black relative check custom-list my-2">
+                  Unlimited Articles
                 </li>
-                <li className="relative check custom-list my-2">
-                  Encrypted Connection
+                <li className="text-black relative check custom-list my-2">
+                  Mentorship
                 </li>
-                <li className="relative check custom-list my-2">
-                  No Traffic Logs
+                <li className="text-black relative check custom-list my-2">
+                  1:1 Counselling
                 </li>
-                <li className="relative check custom-list my-2">
-                  Works on All Devices
+                <li className="text-black relative check custom-list my-2">
+                  24x7 Available
                 </li>
-                <li className="relative check custom-list my-2">
-                  Connect Anyware{" "}
+                <li className="text-black relative check custom-list my-2">
+                  Exclusive products{" "}
                 </li>
-                <li className="relative check custom-list my-2">
-                  Get New Features{" "}
+                <li className=" text-black relative check custom-list my-2">
+                  Games{" "}
                 </li>
               </ul>
               <div className="flex flex-col w-full justify-center mb-8 flex-none mt-12">

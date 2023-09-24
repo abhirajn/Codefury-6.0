@@ -24,7 +24,7 @@ export default function Sidebar() {
     return (
         <div>
             {open ?
-                <div style={{ width: "200px" }} className='h-screen bg-white' onClick={handleClick}>
+                <div style={{ width: "200px" }} className='h-screen bg-white z-10' onClick={handleClick}>
                     <div className='float-right ' onClick={handleClick}><BsFillArrowLeftCircleFill size="2em" style={{ fill: 'black' }}/></div>
                     <div className='flex flex-col w-full'>
                        
@@ -38,7 +38,7 @@ export default function Sidebar() {
                     </div>
                 </div> :
                  <div>
-                    <div style={{ width: "50px" }} className='h-screen bg-white' onClick={handleClick}>
+                    <div style={{ width: "50px" }} className='h-screen bg-white z-10' onClick={handleClick}>
                         <div className='float-right' ><BsFillArrowRightCircleFill size="2em" style={{ fill: 'black' }}/></div>
                         <div className='flex flex-col w-full'>
                        
