@@ -13,6 +13,7 @@ import {MdQuestionAnswer} from "react-icons/md"
 
 
 
+
 export default function Sidebar() {
   const navigate = useNavigate();
  
@@ -24,10 +25,9 @@ export default function Sidebar() {
     return (
         <div>
             {open ?
-                <div style={{ width: "200px" }} className='h-screen bg-white z-10' onClick={handleClick}>
+                <div style={{ width: "400px" }} className='h-screen bg-white' onClick={handleClick}>
                     <div className='float-right ' onClick={handleClick}><BsFillArrowLeftCircleFill size="2em" style={{ fill: 'black' }}/></div>
                     <div className='flex flex-col w-full'>
-                       
 
                         <div onClick={()=>{ navigate('/')}} className='box-border rounded pl-3 py-3 w-full mt-28 flex flex-row text-lg font-medium rounded-md font-mono cursor-pointer text-black hover:p-1 hover:rounded-lg hover:text-white hover:bg-blue-500 hover:py-3'> <GrHomeRounded className='h-5 w-5 ml-1 mr-3' style={{ fill: 'black' }}/> Home</div>
                         <div onClick={()=>{ navigate('/gaming')}} className='box-border rounded pl-3 py-3 w-full mt-2 flex flex-row text-lg font-medium rounded-md font-mono cursor-pointer text-black hover:p-1  hover:rounded-lg hover:text-white hover:bg-blue-500 hover:py-3'> <IoGameController className='h-5 w-5 ml-1 mr-3 '  style={{ fill: 'black' }}  />Games</div>
@@ -38,7 +38,7 @@ export default function Sidebar() {
                     </div>
                 </div> :
                  <div>
-                    <div style={{ width: "50px" }} className='h-screen bg-white z-10' onClick={handleClick}>
+                    <div style={{ width: "50px" }} className='h-screen bg-white' onClick={handleClick}>
                         <div className='float-right' ><BsFillArrowRightCircleFill size="2em" style={{ fill: 'black' }}/></div>
                         <div className='flex flex-col w-full'>
                        
@@ -52,7 +52,6 @@ export default function Sidebar() {
                    </div>
                     </div>
                 </div>}
-
         </div>
     )
 }

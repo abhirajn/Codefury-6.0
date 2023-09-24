@@ -1,10 +1,15 @@
 import React from 'react'
 import './Tipscard.css'
+import Sidebar from './Sidebar'
 
 export default function Tipscard() {
   return (
+  <>
+  <div className = 'fixed'>
+     <Sidebar/>
+     </div>
     <div class = 'bodyy' style={{ backgroundColor: "#303032"}} >
-    <h1>IMPROVE YOUR MENTAL HEALTH EASILY:</h1>
+    <h1 >IMPROVE YOUR MENTAL HEALTH EASILY:</h1>
     <main>
         <section class="cards">
           <div class="card">
@@ -161,5 +166,6 @@ export default function Tipscard() {
 
 
     </div>
+    </>
   )
 }

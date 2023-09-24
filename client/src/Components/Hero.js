@@ -10,17 +10,17 @@ const Hero = ({
     {
       name: "Users",
       number: "390",
-      icon: "https://www.svgrepo.com/download/3278/users.svg",
+      icon: "/assets/Icon/heroicons_sm-user.svg",
     },
     {
       name: "Locations",
       number: "20",
-      icon: "https://www.svgrepo.com/show/127575/location-sign.svg",
+      icon: "/assets/Icon/gridicons_location.svg",
     },
     {
       name: "Server",
       number: "50",
-      icon: "https://www.svgrepo.com//show/76987/server.svg",
+      icon: "/assets/Icon/bx_bxs-server.svg",
     },
   ],
 }) => {
@@ -28,35 +28,39 @@ const Hero = ({
 
   return (
     <div
-      className="  px-5 xl:px-16 mx-auto overscroll-y-none"
+      className=" mt-24 px-5 xl:px-16 mx-auto overscroll-y-none"
       id="about"
+     
     >
       <ScrollAnimationWrapper>
+        <div class="fullg"  style={{
+        backgroundImage: 'url("https://img.freepik.com/free-vector/gradient-instagram-posts-collection-world-mental-health-day_23-2150722498.jpg?w=1380&t=st=1695515847~exp=1695516447~hmac=e7152b30eaf8cb507e9d3a2322f742aafc50327c54b58133bf9dc034551f22bc")'
+      }}>
           <motion.div
-            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
-            variants={scrollAnimation}>
-            <div className="text-black flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+            className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-1 gap-8 py-6 sm:py-16 subheaderg"
+            variants={scrollAnimation}
+           >
+            <div className="text-black flex flex-col justify-center items-start row-start-2 sm:row-start-1" >
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black leading-normal">
-              Embrace Your Well-Being: Your Journey to Mental Wellness Begins Here
+                Want anything to be easy with <strong>LaslesVPN</strong>.
               </h1>
-              <p className="text-black my-4 mx-6">
-              Welcome to a Place of Healing and Hope. Discover Resources, Support, and Guidance to Nourish Your Mental Well-Being. Your Journey to a Healthier You Starts Now
+              <p className="text-black mt-4 mb-6">
+                Provide a network for all your needs with ease and fun using
+                LaslesVPN discover interesting features from us.
               </p>
-              <ButtonPrimary className='m-5'>Get Started</ButtonPrimary>
+              <ButtonPrimary>Get Started</ButtonPrimary>
             </div>
-            <div className="flex w-full">
+            {/* <div className="flex w-full">
               <motion.div className="text-black h-full w-full" variants={scrollAnimation}>
                 <img
-                  src="https://www.everypixel.com/covers/free/vector/health/mental/cover.jpg"
-                  alt="VPN Illustrasi"
-                  quality={100}
-                  width={612}
-                  height={383}
+                  src="https://cdn.powerofpositivity.com/wp-content/uploads/2023/01/positive-thinking-2.png"
+                  style={{position:"background"}}
                   layout="responsive"
                 />
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
+          </div>
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">
         <ScrollAnimationWrapper

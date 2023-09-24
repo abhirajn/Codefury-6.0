@@ -20,14 +20,15 @@ function FAQ() {
         <div className="mx-4 flex flex-wrap mb-[3rem]">
           <div className="w-full px-4 pb-0">
             <div className="mx-auto mb-[10px] max-w-[520px] text-center lg:mb-6">
-              <span className=" text-black text-[2rem] sm:text-[4.5rem] font-bold">
+              <span className=" text-[2rem] sm:text-[4.5rem] font-bold">
                 FAQ
               </span>
-              <h2 className="mb-1 font-bold text-black  text-2xl sm:text-x1">
+              <h2 className="mb-1 font-bold text-dark  text-2xl sm:text-x1">
                 Any Questions? Look Here
               </h2>
-              <p className="text-black text-base text-body-color">
-                frequently asked questions related to our website
+              <p className="text-base text-body-color">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Cupiditate adipisci ipsum commodi odit magnam animi nam.
               </p>
             </div>
           </div>
@@ -43,18 +44,18 @@ function FAQ() {
                 <div
                   key={item.title}
                   className=" mb-4 cursor-pointer "
+                  style={{ backgroundColor: "#303032" }}
                   onClick={() => handleClick(index)}
-                  style={{ backgroundColor: "#eaeafb" }}
                 >
                   {/* question  */}
-                  <button className="flex flex-row justify-between items-center font-semibold p-4 cursor-pointer text-black">
-                    <IoIosArrowDropdownCircle className="w-6 h-6 " style={{fill : "black"}} /> &nbsp;{" "}
+                  <button className="flex flex-row justify-between items-center font-semibold p-4 cursor-pointer ">
+                    <IoIosArrowDropdownCircle className="w-6 h-6" /> &nbsp;{" "}
                     {item.title}
                   </button>
 
                   {/* answer */}
                   {index === activeIndex && (
-                    <p className="text-black  py-1 px-10 text-base leading-relaxed text-body-color ">
+                    <p className=" py-1 px-10 text-base leading-relaxed text-body-color ">
                       {item.content}
                     </p>
                   )}
@@ -69,18 +70,18 @@ function FAQ() {
                 <div
                   key={item.title}
                   className=" mb-4 "
-                  style={{ backgroundColor: "#eaeafb" }}
+                  style={{ backgroundColor: "#303032" }}
                   onClick={() => handleClick(index + itemss1.length)}
                 >
                   {/* question  */}
-                  <button className="flex flex-row justify-between items-center font-semibold p-4 cursor-pointer text-black">
-                    <IoIosArrowDropdownCircle className="w-6 h-6 " style={{fill : "black"}}/> &nbsp;{" "}
+                  <button className="flex flex-row justify-between items-center font-semibold p-4 cursor-pointer">
+                    <IoIosArrowDropdownCircle className="w-6 h-6 text-black" /> &nbsp;{" "}
                     {item.title}
                   </button>
 
                   {/* answer  */}
                   {index + itemss1.length === activeIndex && (
-                    <p className="py-1 px-10 text-base leading-relaxed text-body-color text-black">
+                    <p className="py-1 px-10 text-base leading-relaxed text-body-color">
                       {item.content}
                     </p>
                   )}

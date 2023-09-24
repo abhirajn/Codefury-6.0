@@ -1,5 +1,6 @@
 import React from 'react'
 import './Guidance.css'
+import Sidebar from '../../Components/Sidebar'
 
 import i1 from './i-1.jpg'
 import i2 from './i-2.jpg'
@@ -15,6 +16,10 @@ import i9 from './i-9.jpg'
 
 export default function Guidance() {
   return (
+    <>
+    <div className = 'fixed'>
+     <Sidebar/>
+     </div>
     <div style={{ backgroundColor: "#303032"}}>
     <section class="sub-header">
         <nav>
@@ -123,5 +128,6 @@ export default function Guidance() {
   </div>
 </section>
 </div>
+</>
   )
 }

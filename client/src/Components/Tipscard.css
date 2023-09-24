@@ -6,19 +6,20 @@
   
   bodyy {
     background-color: #303032;
+    
   }
   
   main {
     display: grid;
     grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
     grid-gap: 40px;
-    padding: 60px 0;
+    padding: 30px 0;
   }
   
   .text--medium {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 2px;
     font-weight: 400;
     color: #ecf0f1;
   }
@@ -59,14 +60,17 @@
   }
   
   .card__content {
-    padding: 20px;
+    padding: 10px;
   }
   
   .card__title {
-    margin-bottom: 20px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
   }
   
   .card__info {
+    padding: 10px 5px;
+    height: 30px;
     display: flex;
     align-self: end;
     align-items: center;
@@ -83,8 +87,8 @@
       font-size: xx-large;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: aliceblue;
-      padding-left: 30px;
-      padding-top: 30px;
+      padding-left: 10px;
+      padding-top: 10px;
   }
   
   @media only screen and (max-width: 1000px) {
