@@ -40,7 +40,8 @@ export default function Signup() {
                     }}/>
                         <label for="signup-password" >Password</label>
                     </div>
-                          <button  class="btn" onClick={async() => {
+                          <button  class="btn" onClick={async(event) => {
+   event.preventDefault()
                             console.log(Name + " " + email + " " + password)
                         const response = await axios.post(`https://codefury-backend.onrender.com/user/signup`, {
                             name : Name,
