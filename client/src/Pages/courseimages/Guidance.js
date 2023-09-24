@@ -10,12 +10,16 @@ import i6 from './i-6.jpg'
 import i7 from './i-7.jpg'
 import i8 from './i-8.jpg'
 import i9 from './i-9.jpg'
+import Sidebar from '../../Components/Sidebar'
 
 
 
 export default function Guidance() {
   return (
     <div style={{ backgroundColor: "#303032"}}>
+      <div className = 'fixed'>
+     <Sidebar/>
+     </div>
     <section class="sub-header">
         <nav>
             <a href="">

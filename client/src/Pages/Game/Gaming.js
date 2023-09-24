@@ -1,5 +1,6 @@
 import React from 'react'
 import './Gaming.css'
+import Sidebar from '../../Components/Sidebar'
 
 
 export default function Gaming() {
@@ -7,6 +8,9 @@ export default function Gaming() {
 
   <div class="fullg" >
     <section class="sub-headerg">
+    <div className = 'fixed'>
+     <Sidebar/>
+     </div>
  </section>
     <section class="collabg" >
       <div class="rowg">
