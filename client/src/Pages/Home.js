@@ -17,8 +17,6 @@ export default function Home() {
     <div className='flex flex-row overscroll-none overscroll-y-none'>
 
       {/* <Header/> */}
-
-
 {/*  */}
      <div className = 'fixed'>
      <Sidebar/>
@@ -26,11 +24,19 @@ export default function Home() {
     <div>
     <Navbar/>
     <Hero />
+
        
-        <Pricing/>
+
+
+    <Pricing/>
+        {/* <Sidebar/> */}
         {/* <Mirror/> */}
-        <FAQ/>
-      <Testimonias/>
+     <FAQ/>
+     <Testimonias/>
+        {/* <Pricing/>
+        {/* <Mirror/> */}
+        {/* <FAQ/>
+        <Testimonias/> */} 
      <Footer/>
     </div>
     </div>

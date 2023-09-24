@@ -98,10 +98,10 @@ const Pricing = () => {
                   alt="Standard Plan"
                 />
               </div>
-              <p className="text-lg text-black font-medium capitalize my-2 sm:my-7 text-black">
+              <p className="text-lg  text-black font-medium capitalize my-2 sm:my-7 text-black">
                 Standard Plan{" "}
               </p>
-              <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start text-left text-black-500 flex-grow">
+              <ul className="flex flex-col list-inside pl-6 xl:pl-0 items-start justify-start border-black-500 text-left text-black-500 flex-grow">
                 <li className="relative check custom-list my-2 text-black">
                   Unlimited Bandwitch
                 </li>
@@ -129,7 +129,7 @@ const Pricing = () => {
             <ScrollAnimationWrapper className="flex justify-center">
               <motion.div
                 variants={scrollAnimation}
-                className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
+                className="flex flex-col justify-center items-center border-2 border-black-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20"
                 whileHover={{
                   scale : 1.1,
                   transition: {

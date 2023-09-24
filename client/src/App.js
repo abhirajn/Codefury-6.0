@@ -7,6 +7,7 @@ import Guidance from "./Pages/courseimages/Guidance";
 import Gaming from "./Pages/Game/Gaming";
 import PostQuestions from "./Pages/PostQuestions";
 import Post from "./Pages/Post";
+import Contact from "./Pages/Contact";
 import './App.css'
 
 // import Guidance from "./Pages/courseimages/Guidance";
@@ -24,6 +25,7 @@ function App() {
           <Route path={"/gaming"} element={<Gaming/>}></Route>
           <Route path={"/post"} element={<PostQuestions/>}/>
           <Route path={"/post/:postId"} element={<Post/>}/>
+          <Route path={"/Contact"} element={<Contact/>}/>
         </Routes>
       </Router>
     </div>

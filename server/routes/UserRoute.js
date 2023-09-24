@@ -17,12 +17,12 @@ router.post('/signup', async (req, res) => {
     console.log(req.body)
     const user = await User.findOne({ username });
     if (user) {
-      res.status(403).json({ message: 'User already exists' });
+      res.json({ message: 'User already exists' });
     } else {
       const newUser = new User({ username, password });
       await newUser.save();
       const token = jwt.sign({ username}, SECRET);
-      res.send({ message: 'User created successfully', token });
+      res.json({ message: 'User created successfully', token });
     }
   });
 
@@ -32,10 +32,10 @@ router.post('/signup', async (req, res) => {
     console.log(username)
     const user = await User.findOne({ username, password });
     if (user) {
-      const token = jwt.sign({ username, role: 'user' }, SECRET);
-      res.send({ message: 'Logged in successfully', token });
+      const token = jwt.sign({ username}, SECRET);
+      res.json({ message: 'Logged in successfully', token });
     } else {
-      res.status(403).send({ message: 'Invalid username or password' });
+      res.status(403).json({ message: 'Invalid username or password' });
     }
   });
 
@@ -44,15 +44,44 @@ router.post('/signup', async (req, res) => {
     res.send(response);
   })
 
-  router.get('/questions' , async(req, res)=>{
+  router.get('/questions' ,authenticateJwt ,async(req, res)=>{
     const response = await Question.find({});
     res.send(response);
   })
 
-  router.get('/questions/:questiosId' , async(req, res)=>{
+  router.get('/questions/:questiosId' ,authenticateJwt ,async(req, res)=>{
     const response = await Question.findById(req.params.questiosId)
-console.log(response)
+// console.log(response)
     res.send(response);
+  })
+
+  router.post('/postQuestion' , authenticateJwt,async(req,res)=>{
+    const {  title, description , comments } = req.body;
+    const newques = new Question({ title, description , comments });
+   newques.save();
+   res.send("done");
+  })
+  router.post('/postComment' , authenticateJwt ,async(req,res)=>{
+    const { id , comment } = req.body;
+    try {
+      // Find the item by ID
+      const item = await Question.findById(id.props);
+  
+      if (!item) {
+        return res.status(404).json({ error: 'Item not found' });
+      }
+  
+      // Push the comment to the "comments" array
+      item.comments.push(comment);
+  
+      // Save the updated item
+      await item.save();
+  
+      res.send({ message: 'Comment added successfully' });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send({ error: 'Internal server error' });
+    }
   })
   module.exports = router
 
