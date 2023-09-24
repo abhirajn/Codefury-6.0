@@ -25,11 +25,18 @@ export default function Home() {
     <Navbar/>
     <Hero />
 
+       
+
+
     <Pricing/>
        
      <FAQ/>
      <Testimonias/>
-       
+
+        {/* <Pricing/>
+        {/* <Mirror/> */}
+        {/* <FAQ/>
+        <Testimonias/> */} 
      <Footer/>
     </div>
     </div>

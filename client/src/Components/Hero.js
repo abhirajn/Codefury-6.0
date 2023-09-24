@@ -30,12 +30,17 @@ const Hero = ({
     <div
       className="  px-5 xl:px-16 mx-auto overscroll-y-none"
       id="about"
+     
     >
       <ScrollAnimationWrapper>
+        <div class="fullg"  style={{
+        backgroundImage: 'url("https://img.freepik.com/free-vector/gradient-instagram-posts-collection-world-mental-health-day_23-2150722498.jpg?w=1380&t=st=1695515847~exp=1695516447~hmac=e7152b30eaf8cb507e9d3a2322f742aafc50327c54b58133bf9dc034551f22bc")'
+      }}>
           <motion.div
-            className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
-            variants={scrollAnimation}>
-            <div className="text-black flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+            className="grid grid-flow-row sm:grid-flow-col grid-rows-1 md:grid-rows-1 sm:grid-cols-1 gap-8 py-6 sm:py-16 subheaderg"
+            variants={scrollAnimation}
+           >
+            <div className="text-black flex flex-col justify-center items-start row-start-2 sm:row-start-1" >
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black leading-normal">
               Embrace Your Well-Being: Your Journey to Mental Wellness Begins Here
               </h1>
@@ -44,19 +49,25 @@ const Hero = ({
               </p>
               <ButtonPrimary className='m-5'>Get Started</ButtonPrimary>
             </div>
-            <div className="flex w-full">
+            {/* <div className="flex w-full">
               <motion.div className="text-black h-full w-full" variants={scrollAnimation}>
                 <img
+<<<<<<< HEAD
+                  src="https://cdn.powerofpositivity.com/wp-content/uploads/2023/01/positive-thinking-2.png"
+                  style={{position:"background"}}
+=======
                   src="https://www.everypixel.com/covers/free/vector/health/mental/cover.jpg"
                   alt="VPN Illustrasi"
                   quality={100}
                   width={612}
                   height={383}
+>>>>>>> 0471366210682529de18a7e20ba3be71dd91408d
                   layout="responsive"
                 />
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
+          </div>
       </ScrollAnimationWrapper>
       <div className="relative w-full flex">
         <ScrollAnimationWrapper
