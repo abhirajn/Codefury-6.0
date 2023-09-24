@@ -36,7 +36,8 @@ export default function Login() {
                  <p >Forgot your password?</p>
                  <p >Forgot your password?</p>
                </div>
-            <button class="btn"  onClick={async () => {
+            <button class="btn"  onClick={async (event) => {
+   event.preventDefault();
               console.log(email + " " + password)
                         const res = await axios.post(`https://codefury-backend.onrender.com/user/login`, {
                           username: email,
