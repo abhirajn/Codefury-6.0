@@ -12,7 +12,7 @@ import Post from "./Pages/Post";
 
 function App() {
   return (
-    <div className="">
+    <div className=" overscroll-none overscroll-y-none">
       <Router>
         <Routes>
           <Route path={"/login"} element={<Login />} />

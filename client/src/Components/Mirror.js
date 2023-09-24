@@ -3,6 +3,7 @@ import './Mirror.css'
 export default function Mirror() {
   return (
     <div>
+
         <div class="container">
             <div class="content">
                 <div class="square twitch" style="margin-bottom: 50px;">
@@ -23,6 +24,12 @@ export default function Mirror() {
                 </a>
             </div>
         </div>
+
+      {/* style={{background-image: url('https://images.pond5.com/african-woman-meditating-yoga-lotus-footage-077193422_prevstill.jpeg')}}" */}
+         <div class ="mirror" >
+     <p> Looking for how to keep social media out of your lives?</p>
+    </div>
+
     </div>
   )
 }
