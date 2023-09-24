@@ -7,6 +7,7 @@ import Guidance from "./Pages/courseimages/Guidance";
 import Gaming from "./Pages/Game/Gaming";
 import PostQuestions from "./Pages/PostQuestions";
 import Post from "./Pages/Post";
+import './App.css'
 
 // import Guidance from "./Pages/courseimages/Guidance";
 

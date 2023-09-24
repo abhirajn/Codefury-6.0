@@ -4,6 +4,7 @@ import { useState , useEffect} from 'react';
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import {useNavigate} from "react-router-dom";
+import Sidebar from '../Components/Sidebar';
 
 export default function Post() {
     let { postId } = useParams();
@@ -29,8 +30,13 @@ export default function Post() {
         init();
     }, []);
   return (
+    <> 
+    <div className = 'fixed'>
+    <Sidebar/>
+    </div>
     <div className='bg-black'>
         {ques ? <>  <SinglePost props = {ques}/> </>  : <></>}
     </div>
+     </>
   )
 }
